@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-
 
 public class NestControl : MonoBehaviour
 {
+    public ParticleSystem featherParticle;
     public Lives lives;
     public float nestLeftBound = -0.6f;
     public float nestRightBound = 0.4f;
@@ -49,37 +46,34 @@ public class NestControl : MonoBehaviour
         }
     }
 
-
     //Here is methods which change nest speed
     //This change go from Egg
     public void UpdateTimer() 
     {
-         if(startTimer == true) 
-         {
-            if(currentTime > 0) 
+        if (startTimer == true)
+        {
+            if (currentTime > 0)
             {
                 currentTime -= Time.deltaTime;
             }
-            else 
+            else
             {
+                featherParticle.Stop();
                 startTimer = false;
                 nestSpeed = 0.8f;
             }
-         }
+        }
     }
     public void FeatherSwitch(bool isFeather)
     {
-        //Debug.Log("Функция работает");
         if (isFeather == true)
         {
+            featherParticle.Play();
             startTimer = true;
             currentTime = featherTimer;
             nestSpeed = 2;
         }
     }
-
-
-   
 }
 
 

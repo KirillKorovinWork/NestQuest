@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 399346553975065673}
   - component: {fileID: 399346553975065672}
-  - component: {fileID: 1928729250309117899}
   - component: {fileID: 5044004272170972361}
+  - component: {fileID: 2634925602001283254}
   m_Layer: 0
   m_Name: Egg Rain
   m_TagString: Untagged
@@ -53,26 +53,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 1, z: 0.8}
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &1928729250309117899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399346553975065685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d62154f8fcd96b4e86650c0cc5f8596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreAdd: 1
-  livesSub: 1
-  eggSpeedAdd: 0.03
-  coinsAdd: 1
-  eggSwitch: 0
-  goldenEggSwitch: 0
-  featherSwitch: 0
-  eggRainSwitch: 1
 --- !u!54 &5044004272170972361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -89,6 +69,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &2634925602001283254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399346553975065685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b439968940aa3845942a375a4684ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &399346554120678294
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +192,7 @@ GameObject:
   - component: {fileID: 1928729251166628814}
   - component: {fileID: 1928729251166628813}
   m_Layer: 0
-  m_Name: Egg (1)
+  m_Name: Egg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,7 +290,7 @@ GameObject:
   - component: {fileID: 573737497968022468}
   - component: {fileID: 4952406084572796129}
   m_Layer: 0
-  m_Name: Egg (3)
+  m_Name: Egg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -396,7 +388,7 @@ GameObject:
   - component: {fileID: 8048724064974680646}
   - component: {fileID: 1552626413498106037}
   m_Layer: 0
-  m_Name: Egg (2)
+  m_Name: Egg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -494,7 +486,7 @@ GameObject:
   - component: {fileID: 6961931248488380232}
   - component: {fileID: 7838429612648434733}
   m_Layer: 0
-  m_Name: Egg (4)
+  m_Name: Egg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -592,7 +584,7 @@ GameObject:
   - component: {fileID: 4134499115550464705}
   - component: {fileID: 1960008843529456904}
   m_Layer: 0
-  m_Name: Egg (5)
+  m_Name: Egg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

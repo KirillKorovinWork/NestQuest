@@ -108,8 +108,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2256016009914282896}
   - component: {fileID: 2256016009914282897}
-  - component: {fileID: 1441376274}
   - component: {fileID: 6862322694121098000}
+  - component: {fileID: 7558995987362011343}
   m_Layer: 0
   m_Name: Egg
   m_TagString: Untagged
@@ -146,26 +146,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 1, z: 0.8}
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &1441376274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2256016009914282892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d62154f8fcd96b4e86650c0cc5f8596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreAdd: 1
-  livesSub: 1
-  eggSpeedAdd: 0.03
-  coinsAdd: 1
-  eggSwitch: 1
-  goldenEggSwitch: 0
-  featherSwitch: 0
-  eggRainSwitch: 0
 --- !u!54 &6862322694121098000
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -182,3 +162,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &7558995987362011343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2256016009914282892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d62154f8fcd96b4e86650c0cc5f8596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eggSpeedAdd: 0.001
+  scoreAdd: 1
+  livesSub: 1

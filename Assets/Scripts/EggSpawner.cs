@@ -53,7 +53,6 @@ public class EggSpawner : MonoBehaviour
                 var position = new Vector3(Random.Range(nestControl.nestLeftBound, nestControl.nestRightBound), 1.3f, -0.159f);
                 yield return new WaitForSeconds(eggSpawnRate);
                 Instantiate(egg[0], position, Quaternion.identity);
-                //Debug.Log(i);
             }
             int differentRandom = Random.Range(2, 4);
             var pos = new Vector3(Random.Range(nestControl.nestLeftBound, nestControl.nestRightBound), 1.3f, -0.159f);
@@ -64,14 +63,6 @@ public class EggSpawner : MonoBehaviour
     public void EggSpeed(float speed) 
     {
         eggSpeed = eggSpeed + speed;
-        //if(speed == -1) 
-        //{
-        //    eggSpeed = 0.1f;
-        //}
-        //else 
-        //{
-        //    eggSpeed = eggSpeed + speed;
-        //}
     }
     
 }

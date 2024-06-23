@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3364631554074974800}
   - component: {fileID: 7612336458589619017}
-  - component: {fileID: 4115182012991844705}
+  - component: {fileID: 536856952063254304}
   m_Layer: 0
   m_Name: Feather
   m_TagString: Untagged
@@ -47,7 +47,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.81, y: 3.18, z: 1}
   m_Center: {x: 0.61, y: 0, z: 0}
---- !u!114 &4115182012991844705
+--- !u!114 &536856952063254304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,17 +56,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2736572561898193130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d62154f8fcd96b4e86650c0cc5f8596, type: 3}
+  m_Script: {fileID: 11500000, guid: 38f0640eb7c4df84b9017f1798bc9164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreAdd: 1
-  livesSub: 1
-  eggSpeedAdd: 0.1
-  coinsAdd: 1
-  eggSwitch: 0
-  goldenEggSwitch: 0
-  featherSwitch: 1
-  eggRainSwitch: 0
 --- !u!1 &6374715387227322419
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -11,9 +9,9 @@ public class Score : MonoBehaviour
     public Lives lives;
     private void Start()
     {
-        EggScore(0);
+        GameScore(0);
     }
-    public void EggScore(int scoreAdd)
+    public void GameScore(int scoreAdd)
     {
         if (!lives.gameOver) 
         {
